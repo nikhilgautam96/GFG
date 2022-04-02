@@ -1,5 +1,3 @@
-package Bit Magic;
-
 public class longest_consecutive_1s {
     public static int maxConsecutiveOnes(int N) {
         int count = 0;
