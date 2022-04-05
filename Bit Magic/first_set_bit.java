@@ -1,4 +1,4 @@
-public class find_first_set_bit {
+public class first_set_bit {
     public static int getFirstSetBit(int n){            
         if(n == 0) return 0;
         int setBit = n - (n & (n-1)); // n ^ (n & (n-1))
