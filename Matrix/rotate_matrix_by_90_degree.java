@@ -1,3 +1,4 @@
+// Time : O(n * n), Space : O(1).
 package Matrix;
 public class rotate_matrix_by_90_degree {
     static void rotateby90(int matrix[][], int n) { 
