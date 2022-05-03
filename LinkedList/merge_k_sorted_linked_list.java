@@ -1,5 +1,12 @@
 package LinkedList;
-public class merge_two_sorted_linked_list {
+public class merge_k_sorted_linked_list {
+    Node mergeKList(Node[]arr, int K) {
+        Node root = arr[0];
+        for(int i = 1; i<K; i++) {
+            root = sortedMerge(root, arr[i]);
+        }
+        return root;
+    }
     Node sortedMerge(Node head1, Node head2) {
         Node root = new Node(-1);
         Node head = root;
@@ -20,5 +27,5 @@ public class merge_two_sorted_linked_list {
             root = root.next;
         }
         return head.next;
-   } 
+    }
 }

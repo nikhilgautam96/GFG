@@ -6,7 +6,6 @@ public class insertion {
         head = temp;
         return head;
     }   
-    //Function to insert a node at the end of the linked list.
     Node insertAtEnd(Node head, int x) {
         Node start = head;
         if(head == null) {

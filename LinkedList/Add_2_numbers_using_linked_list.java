@@ -1,92 +1,45 @@
 package LinkedList;
 public class Add_2_numbers_using_linked_list {
-    static Node addTwoLists(Node first, Node second){
-        Node cur = first, prev = null;
+    static Node reverseList(Node head) {
+        Node cur = head, prev = null;
         while(cur != null) {
+            // prev = cur;
             Node temp = cur.next;
             cur.next = prev;
             prev = cur;
             cur = temp;
         }
-        first = prev;
-        cur = second; prev = null;
-        while(cur != null) {
-            Node temp = cur.next;
-            cur.next = prev;
-            prev = cur;
-            cur = temp;
-        }
-        second = prev;
-        
-        Node res = null, resHead = null;
+        return prev;
+    }
+    static Node addTwoLists(Node first, Node second) {
+        first = reverseList(first);
+        second = reverseList(second);
+        Node res = null, dummy = new Node(0);
+        res = dummy;
         int carry = 0;
-        while(first != null && second != null) {
-            int sum = (first.data + second.data + carry);
+        while(first != null || second != null || carry != 0) {
+            int sum = 0;
+            if(first != null)
+                sum += first.data;
+            if(second != null)
+                sum += second.data;
+            sum += carry;
             carry = 0;
             if(sum > 9) {
                 carry = sum / 10;
                 sum = sum % 10;
             }
             Node temp = new Node(sum);
-            if(resHead == null) {
-                resHead = res = temp;
-            }else {
-                res.next = temp;
-                res = res.next;
-            }
-            first = first.next;
-            second = second.next;
+            res.next = temp;
+            res = res.next;
+            if(first != null)
+                first = first.next;
+            if(second != null)
+                second = second.next;
         }
-        while(first != null) {
-            int sum = (first.data + carry);
-            carry = 0;
-            if(sum > 9) {
-                carry = sum / 10;
-                sum = sum % 10;
-            }
-            Node temp = new Node(sum);
-            if(resHead == null) {
-                resHead = res = temp;
-            }else {
-                res.next = temp;
-                res = res.next;
-            }
-            first = first.next;
-        }
-        while(second != null) {
-            int sum = (second.data + carry);
-            carry = 0;
-            if(sum > 9) {
-                carry = sum / 10;
-                sum = sum % 10;
-            }
-            Node temp = new Node(sum);
-            if(resHead == null) {
-                resHead = res = temp;
-            }else {
-                res.next = temp;
-                res = res.next;
-            }
-            second = second.next;
-        }
-        while(carry != 0) {
-            int sum = carry % 10;
-            Node temp = new Node(sum);
-            if(resHead == null) {
-                resHead = res = temp;
-            }else {
-                res.next = temp;
-                res = res.next;
-            }
-            carry /= 10;
-        }
-        cur = resHead; prev = null;
-        while(cur != null) {
-            Node temp = cur.next;
-            cur.next = prev;
-            prev = cur;
-            cur = temp;
-        }
-        return resHead = prev;
+        Node head = dummy.next;
+        dummy.next = null;
+        head = reverseList(head);
+        return head;
     }
 }

@@ -1,5 +1,5 @@
-package LinkedList;
-public class merge_two_sorted_linked_list {
+package LinkedList.Templates;
+public class merge_2_sorted_list {
     Node sortedMerge(Node head1, Node head2) {
         Node root = new Node(-1);
         Node head = root;
@@ -20,5 +20,5 @@ public class merge_two_sorted_linked_list {
             root = root.next;
         }
         return head.next;
-   } 
+   }
 }
