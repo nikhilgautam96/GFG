@@ -2,11 +2,19 @@
 
 package Tree;
 public class LCA_of_a_binary_tree {
+    boolean v1 = false, v2 = false;
     Node lca(Node root, int n1, int n2) {
-	    if(root == null || root.data == n1 || root.data == n2)
+	    if(root == null) 
 	        return root;
+        if(root.data == n1 || root.data == n2) {
+            if(root.data == n1) v1 = true;
+            if(root.data == n2) v2 = true;
+            return root;
+        }
 	    Node left = lca(root.left, n1, n2);
-	    Node right = lca(root.right, n1, n2);
+        Node right = null;
+        if(v1 == false || v2 == false)
+	        right = lca(root.right, n1, n2);
 	    
 	    if(left == null) {
 	       // nothing found on left side.
