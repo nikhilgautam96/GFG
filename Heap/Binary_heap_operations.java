@@ -45,7 +45,7 @@ public class Binary_heap_operations {
         decreaseKey(i, Integer.MIN_VALUE);
         extractMin();
     }
-    //Function to change value at ith index and store that value at first index.
+    // Decrease-Key goes from = "i to 0"
     void decreaseKey(int i, int new_val) {
         // Time : O(log n) or O(H).
         harr[i] = new_val;
@@ -61,6 +61,7 @@ public class Binary_heap_operations {
         1. "Extract Minimum" and 
         2. "Build Heap" 
     */
+    // MinHeapify goes from = "i to N"
     void MinHeapify(int i) {
         // Time : O(log n) or O(H),  
         // Space : O(H) in reursive approach, O(1) in iterative approach.
