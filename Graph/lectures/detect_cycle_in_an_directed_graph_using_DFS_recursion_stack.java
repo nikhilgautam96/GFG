@@ -1,7 +1,7 @@
 // Time : O(V + E)
 package Graph.lectures;
 import java.util.*;
-public class detect_cycle_in_an_directed_graph {
+public class detect_cycle_in_an_directed_graph_using_DFS_recursion_stack {
     static void addEdge(ArrayList<ArrayList<Integer>> adj, int u, int v) { 
 		adj.get(u).add(v); 
 		adj.get(v).add(u); 
