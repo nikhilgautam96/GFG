@@ -2,7 +2,7 @@
 // Time : O(V + E), Space : O(V) for the Queue we used.
 package Graph.lectures;
 import java.util.*;
-public class topological_sort_BFS_kahns {
+public class topological_sort_BFS_kahns_algo {
     static void addEdge(ArrayList<ArrayList<Integer>> adj, int u, int v) { 
 		adj.get(u).add(v); 
 	} 
@@ -19,10 +19,10 @@ public class topological_sort_BFS_kahns {
         while (q.isEmpty()==false) { 
             int u = q.poll(); 
             System.out.print(u+" ");
-            for (int x: adj.get(u)) 
+            for (int x : adj.get(u)) 
                 if (--in_degree[x] == 0) 
                     q.add(x); 
-        } 
+        }
     }
 	public static void main(String[] args) {  
 		int V = 5; 
