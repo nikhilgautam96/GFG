@@ -20,7 +20,7 @@ public class detect_cycle_in_an_directed_graph_using_kahns_algo {
         while (q.isEmpty()==false) { 
             int u = q.poll(); 
             System.out.print(u+" "); 
-            for (int x: adj.get(u)) 
+            for (int x : adj.get(u)) 
                 if (--in_degree[x] == 0) 
                     q.add(x); 
         }
