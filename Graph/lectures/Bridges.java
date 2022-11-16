@@ -1,7 +1,6 @@
-package Graph.lectures;
-
 // Time : O(V + E), Space : O(V)
-import java.util.ArrayList;
+package Graph.lectures;
+import java.util.*;
 public class Bridges {
     void DFS(int cur, int parent, int timer, int tin[], int low[], boolean visited[], ArrayList<ArrayList<Integer>> adj) {
         visited[cur] = true;
