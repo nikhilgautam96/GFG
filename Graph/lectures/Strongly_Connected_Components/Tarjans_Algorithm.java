@@ -1,4 +1,4 @@
-// Time : O(V + E)
+// Time : O(V + E) and 1 traversal of the graph
 package Graph.lectures;
 import java.util.*;
 public class Tarjans_Algorithm {
