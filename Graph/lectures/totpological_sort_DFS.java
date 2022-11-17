@@ -9,7 +9,7 @@ public class totpological_sort_DFS {
                     boolean visited[], int s) {
         visited[s] = true;
         for(int u : g.get(s)) {
-            if(visited[u] == false) {
+            if(!visited[u]) {
                 DFS_topological_sort(g, visited, u);
             }
         }
