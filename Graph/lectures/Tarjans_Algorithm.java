@@ -1,3 +1,4 @@
+// Time : O(V + E)
 package Graph.lectures;
 import java.util.*;
 public class Tarjans_Algorithm {
