@@ -1,5 +1,5 @@
 // Time : O(V + E) and 1 traversal of the graph
-package Graph.lectures;
+package Graph.lectures.Strongly_Connected_Components;
 import java.util.*;
 public class Tarjans_Algorithm {
     void DFS(int cur, int timer, int tin[], int low[], boolean inStack[], Stack<Integer> st, ArrayList<ArrayList<Integer>> adj) {

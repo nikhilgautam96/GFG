@@ -1,5 +1,5 @@
 // Time : Theta(V ^ 2)
-package Graph.lectures.Prims_Algorithm;
+package Graph.lectures.Minimum_Spanning_Tree_Algorithms.Prims_Algorithm;
 import java.util.*;
 public class naive {
     int prims(int graph[][], int V) {

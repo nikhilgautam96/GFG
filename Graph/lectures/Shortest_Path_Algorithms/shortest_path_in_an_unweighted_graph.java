@@ -1,6 +1,6 @@
 // Time : O(V + E)
 // Note : In an Unweighted graph, BFS always gives the shortest distance.
-package Graph.lectures;
+package Graph.lectures.Shortest_Path_Algorithms;
 import java.util.*;
 public class shortest_path_in_an_unweighted_graph {
     static void addEdge(ArrayList<ArrayList<Integer>> adj, int u, int v) { 

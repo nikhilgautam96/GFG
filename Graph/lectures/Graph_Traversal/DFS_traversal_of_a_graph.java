@@ -1,4 +1,4 @@
-package Graph.lectures;
+package Graph.lectures.Graph_Traversal;
 import java.util.*;
 public class DFS_traversal_of_a_graph {
     void DFS(ArrayList<ArrayList<Integer>> adj, int s, boolean visited[]) {

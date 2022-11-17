@@ -1,5 +1,5 @@
 // Time : O(V * E), for complete graph it is - O(n ^ 2)
-package Graph.lectures;
+package Graph.lectures.Shortest_Path_Algorithms;
 import java.util.*;
 public class BellmanFord_Shortest_path_algorithm {
     class Edge {

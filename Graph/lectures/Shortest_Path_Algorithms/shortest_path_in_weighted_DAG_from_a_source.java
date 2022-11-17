@@ -1,7 +1,7 @@
 // Time : O(V + E), Space : O(V)
 // Why this works - Since we have topological sort of the graph we always travel 
 //                  to forward direction so the output we have is correct one.
-package Graph.lectures;
+package Graph.lectures.Shortest_Path_Algorithms;
 import java.util.*;
 class pair {
     int v, w;
