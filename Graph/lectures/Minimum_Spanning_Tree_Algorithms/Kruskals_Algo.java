@@ -1,4 +1,5 @@
 // Time : O(E * Log E), Space O(V)
+// Using Disjoint-Set
 package Graph.lectures.Minimum_Spanning_Tree_Algorithms;
 import java.util.*;
 public class Kruskals_Algo {
