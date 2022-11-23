@@ -1,4 +1,4 @@
-// Time : O((V + E) log V), Space : O(V + E)
+// Time : O((V + E) log V), Space : O(E)
 package Graph.lectures.Minimum_Spanning_Tree_Algorithms.Prims_Algorithm;
 import java.util.*;
 public class using_Min_Heap {

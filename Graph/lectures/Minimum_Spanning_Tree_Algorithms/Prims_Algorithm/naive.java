@@ -1,4 +1,4 @@
-// Time : Theta(V ^ 2)
+// Time : Theta(V ^ 2), Space : O(V)
 package Graph.lectures.Minimum_Spanning_Tree_Algorithms.Prims_Algorithm;
 import java.util.*;
 public class naive {
