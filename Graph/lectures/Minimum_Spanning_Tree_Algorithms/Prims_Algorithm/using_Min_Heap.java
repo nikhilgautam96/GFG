@@ -23,7 +23,7 @@ public class using_Min_Heap {
         // the cost of reaching source is always '0'.
         pq.add(new Pair(-1, 0, 0));
         boolean visited[] = new boolean[V];
-        int res = 0, count = V;
+        int res = 0, count = V-1;
         while(!pq.isEmpty() && count > 0) {
             Pair temp = pq.remove();
             if(!visited[temp.v]) {

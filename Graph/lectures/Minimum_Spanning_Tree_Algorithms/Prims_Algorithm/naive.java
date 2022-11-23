@@ -9,7 +9,7 @@ public class naive {
         boolean mSet[] = new boolean[V];
         minWeight[0] = 0; // starting vertex.
 
-        for(int i = 0; i<V; i++) {
+        for(int i = 0; i<V-1; i++) {
             // Finding the minimum weight edge.
             int u = -1;
             for(int j = 0; j<V; j++) {
