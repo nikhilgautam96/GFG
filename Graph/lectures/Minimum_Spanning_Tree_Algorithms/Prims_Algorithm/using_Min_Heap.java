@@ -31,6 +31,8 @@ public class using_Min_Heap {
                 visited[temp.v] = true;
                 res += temp.wt;
                 for(Edge e : g[temp.v]) {
+                    // This step seems like it will take O(V * E) time when combined with the outer loop but,
+                    // it actually take O(E) total time as there are E Edges to traverse in total.
                     if(!visited[e.v]) {
                         pq.add(new Pair(temp.v, e.v, e.wt));
                     }
