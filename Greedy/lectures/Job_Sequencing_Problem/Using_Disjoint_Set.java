@@ -1,4 +1,5 @@
 // Time : O(N * Log M), Space : O(M),  where M = "Maximum Deadline"
+// below method uses Disjoint Set but only with Path Compression and not Union By Rank.
 package Greedy.lectures.Job_Sequencing_Problem;
 import java.util.*;
 public class Using_Disjoint_Set {
