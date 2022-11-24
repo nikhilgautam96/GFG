@@ -1,4 +1,4 @@
-// Time : O(N Log N) + O(N * M), where M = "Maximum Deadline"
+// Time : O(N Log N) + O(N * M), Space : O(M), where M = "Maximum Deadline"
 package Greedy.lectures.Job_Sequencing_Problem;
 import java.util.*;
 public class Usual_Greedy_approach {
@@ -8,7 +8,7 @@ public class Usual_Greedy_approach {
             this.id = id; this.deadline = deadline; this.profit = profit;
         }
     }
-    void jobScheduling(Job arr[], int n) {
+    void jobSequencing(Job arr[], int n) {
         Arrays.sort(arr, (a, b)->(b.profit - a.profit));
         int maxDeadline = 0;
         for( int i = 0; i<n; i++) {
@@ -29,7 +29,7 @@ public class Usual_Greedy_approach {
         }
         System.out.println("No of jobs done is = " + countJobs);
         System.out.println("Maximum Profit made is = " + maxProfit);
-        System.out.println("Sequence of jobs is = ");
+        System.out.print("Sequence of jobs is = ");
         for(int i : result) {
             if(i != -1) {
                 System.out.print(result[i] + " ");
