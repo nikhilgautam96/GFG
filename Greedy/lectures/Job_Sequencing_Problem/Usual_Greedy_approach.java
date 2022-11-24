@@ -1,4 +1,5 @@
-// Time : O(N Log N) + O(N * M), Space : O(M), where M = "Maximum Deadline"
+// Time : O(N Log N) "for sorting" + O(N * M) "For finding slots", 
+// Space : O(M),    where M = "Maximum Deadline"
 package Greedy.lectures.Job_Sequencing_Problem;
 import java.util.*;
 public class Usual_Greedy_approach {
