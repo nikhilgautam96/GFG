@@ -1,5 +1,5 @@
 // Time : O(2 ^ (n * n)), Space : O(n * n)
-package Backtracking;
+package Backtracking.lectures;
 class Rat_in_a_maze {
     static boolean isSafe(int arr[][], int i, int j, int n) {
         return (i<n && j<n && arr[i][j] == 1) ;

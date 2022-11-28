@@ -1,5 +1,5 @@
 // Time : O(N!), Space O(N ^ 2)
-package Backtracking;
+package Backtracking.lectures;
 public class N_Queen_problem {
     static final int N = 4;
     static int board[][] = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 } };
