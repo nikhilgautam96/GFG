@@ -1,3 +1,4 @@
+// Time : O(N!), Space O(N ^ 2)
 package Backtracking.lectures.N_Queens;
 import java.util.*;
 public class Optimized {
