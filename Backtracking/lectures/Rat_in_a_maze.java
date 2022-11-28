@@ -1,4 +1,6 @@
-// Time : O(2 ^ (n * n)), Space : O(n * n)
+// Time : O(2 ^ (n * n)) - Since in every cell we have 2 options (1. go down, 2. go right)
+//          if the options are (top, down, left, right) then Time = O(4 ^ (n * n)).
+// Space : O(n * n)
 package Backtracking.lectures;
 class Rat_in_a_maze {
     static boolean isSafe(int arr[][], int i, int j, int n) {

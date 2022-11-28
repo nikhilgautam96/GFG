@@ -1,6 +1,6 @@
 // Time : O(N!), Space O(N ^ 2)
-package Backtracking.lectures;
-public class N_Queen_problem {
+package Backtracking.lectures.N_Queens;
+public class Naive {
     static final int N = 4;
     static int board[][] = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 } };
     boolean isSafe(int row, int col) {
