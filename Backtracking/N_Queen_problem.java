@@ -2,10 +2,7 @@
 package Backtracking;
 public class N_Queen_problem {
     static final int N = 4;
-    static int board[][] = { { 0, 0, 0, 0 }, 
-                            { 0, 0, 0, 0 }, 
-                            { 0, 0, 0, 0 }, 
-                            { 0, 0, 0, 0 } };
+    static int board[][] = { { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, { 0, 0, 0, 0 } };
     boolean isSafe(int row, int col) {
         // 1st check the row.
         for(int i = 0; i < col; i++) {
@@ -45,12 +42,10 @@ public class N_Queen_problem {
         return false;
     }
     boolean solve() { 
-  
         if (solveRec(0) == false) { 
             System.out.print("Solution does not exist"); 
             return false; 
-        } 
-  
+        }
         printSolution(board); 
         return true; 
     }
