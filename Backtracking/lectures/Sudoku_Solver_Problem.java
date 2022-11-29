@@ -1,3 +1,5 @@
+// Time : O(N ^ (N * N)), eg :- For N = 9 => O(9 ^ (9 * 9))
+//          bcz for every cell there are exactly 9 options.
 public class Sudoku_Solver_Problem {
     static boolean isSafe(int i, int j, int num, int N, int b[][]) {
         // 1st check for i'th row and j'th column.
