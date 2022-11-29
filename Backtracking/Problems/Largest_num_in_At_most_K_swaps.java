@@ -2,7 +2,7 @@
 //                  until the value of k is 0. So total recursive calls are O((n)^k).
 // Space : O(n) - The space required to store the answer, where n is the size of string.
 package Backtracking.Problems;
-class Largest_number_in_K_swaps {
+class Largest_num_in_At_most_K_swaps {
     static String maximum;
     static char[] swap(char str[], int i, int j) {
         char temp = str[i];
