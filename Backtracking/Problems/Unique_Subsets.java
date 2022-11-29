@@ -1,4 +1,4 @@
-// Time : O(2 ^ N), bcz every elemet is either included or not included.
+// Time : O(2 ^ N), bcz every element is either included or not included.
 package Backtracking.Problems;
 import java.util.*;
 public class Unique_Subsets {
