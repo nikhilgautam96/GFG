@@ -1,3 +1,4 @@
+// Time : O(N * M)
 package Backtracking.Problems;
 public class Black_and_white {
     static boolean exists(int i, int j, int N, int M) {

@@ -1,3 +1,4 @@
+// Time : ((2 * Max_Jump) ^ (n * n))
 package Backtracking.Problems;
 import java.util.*;
 public class Rat_in_a_maze_with_jumps {
