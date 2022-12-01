@@ -23,7 +23,7 @@ public class N_Meetings_in_a_Room {
         for(int i = 0; i<n; i++) {
             arr[i] = new Meeting(i, start[i], end[i]);
         }
-        Arrays.sort(arr);
+        Arrays.sort(arr); // Sorts according to end time.
         int count = 1;
         int prev = 0;
         for(int i = 1; i<arr.length; i++) {
