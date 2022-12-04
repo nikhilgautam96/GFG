@@ -1,5 +1,5 @@
 // Time : O(N * Log N), Space : O(N) - for the heap.
-package Greedy.Problems.Minimum_Platforms;
+package Greedy.TUF.Minimum_Platforms;
 import java.util.*;
 public class using_min_heap_greedy {
     class TrainSchedule implements Comparable<TrainSchedule> {

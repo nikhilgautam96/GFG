@@ -1,5 +1,5 @@
 // Time : O(n * log n), Space : O(1)
-package Greedy.Problems.Minimum_Platforms;
+package Greedy.TUF.Minimum_Platforms;
 import java.util.*;
 public class best_greedy_technique {
     int minimumPlatform(int arrival[], int dept[], int n) {
