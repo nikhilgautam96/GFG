@@ -1,3 +1,4 @@
+// Time : O(V + E), Space : O(V)
 package Graph.lectures;
 import java.util.*;
 public class detect_cycle_in_an_directed_graph_using_kahns_algo {
@@ -21,8 +22,10 @@ public class detect_cycle_in_an_directed_graph_using_kahns_algo {
             int u = q.poll(); 
             System.out.print(u+" "); 
             for (int x : adj.get(u)) 
-                if (--in_degree[x] == 0) 
-                    q.add(x); 
+                if (--in_degree[x] == 0) {
+                    q.add(x);
+                    count--;
+                }
         }
         if(count > 0) {
             System.out.println("Cycle Found");

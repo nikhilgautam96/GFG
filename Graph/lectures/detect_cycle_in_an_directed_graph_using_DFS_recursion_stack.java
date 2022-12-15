@@ -11,7 +11,7 @@ public class detect_cycle_in_an_directed_graph_using_DFS_recursion_stack {
     	recSt[s]=true;
         for(int u:adj.get(s)){
             if(visited[u]==false && DFSRec(adj,u,visited,recSt)==true)
-                    {return true;}
+                {return true;}
             else if(recSt[u]==true)
                 {return true;}
         }
