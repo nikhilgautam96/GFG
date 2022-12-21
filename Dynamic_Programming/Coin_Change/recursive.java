@@ -1,4 +1,7 @@
-// Time : o(2 ^ n) - since we either select/ignore the coin.
+// Time : O(2 ^ n) - since we either select/ignore the coin.
+// Space : O(n + sum) - since the recursion tree will either reduce the coins
+//                      or reduce the sum or do both alternatively in which case,
+//                      we have tree size as "n + sum".
 package Dynamic_Programming.Coin_Change;
 public class recursive {
     int count_Ways(int coins[], int n, int sum) {
