@@ -22,7 +22,7 @@ public class recursive {
         // Else -> { 1. Delete last char of S1 = (s1, s2, n-1, m)
         //           2. Add last char of S2 to S1 = (s1, s2, n, m-1)
         //           3. Replace last char of S1 with that of S2 = (s1, s2, n-1, m-1) }
-        return Math.min(edit_distance(s1, s2, n-1, m), 
-                    Math.min(edit_distance(s1, s2, n, m-1), edit_distance(s1, s2, n-1, m-1)));
+        return 1 + Math.min(edit_distance(s1, s2, n-1, m), 
+                Math.min(edit_distance(s1, s2, n, m-1), edit_distance(s1, s2, n-1, m-1)));
     }
 }
