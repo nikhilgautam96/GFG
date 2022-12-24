@@ -1,4 +1,4 @@
-// Time : O(3 ^ n), Space : O(n + a + b + c) for recursion stack.
+// Time : O(3 ^ n), Space : O(n) for recursion stack.
 package Dynamic_Programming.Maximum_Cuts;
 public class recusion {
     int maxCuts(int n, int a, int b, int c) {
