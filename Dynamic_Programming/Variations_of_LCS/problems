@@ -1,8 +1,8 @@
 Variations of LCS :- 
-      1. Diff Utility (difference b/w two files) .
-      2. Minimum insertions and deletions to convert S1 to S2.
-      3. Shortest Common Super-sequence.
-      4. Longest Palindromic Subsequence.
-      5. Longest Repeating Subsequence.
-      6. Space Optimized DP solution for LCS.
-      7. Printing LCS.
+    1. Diff Utility (difference b/w two files) .
+    2. Minimum insertions and deletions to convert S1 to S2.
+    3. Shortest Common Super-sequence.
+    4. Longest Palindromic Subsequence.
+    5. Longest Repeating Subsequence.
+    6. Space Optimized DP solution for LCS.
+    7. Printing LCS.
