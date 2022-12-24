@@ -1,4 +1,6 @@
-// Time : O(n ^ Sum), Space : 
+// Time : O(n ^ Sum), 
+// Space : O(Sum), if at worst case scenarion the sum keeps reducing by 1 value in every 
+//          recursive call then at a time we can have a recursion stack of size = sum.
 package Dynamic_Programming.Minimum_coins_to_make_a_value;
 public class recursive {
     int getMin(int coins[], int n, int sum) {
