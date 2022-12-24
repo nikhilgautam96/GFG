@@ -1,6 +1,6 @@
 // Time : Theta(n), Space : Theta(n)
 package Dynamic_Programming.Maximum_Cuts;
-public class dp {
+public class dp_Tabulation {
     int maxCuts(int n, int a, int b, int c) {
         int dp[] = new int[n+1];
         dp[0] = 0;
