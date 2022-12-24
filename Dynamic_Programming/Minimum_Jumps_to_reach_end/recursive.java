@@ -1,4 +1,4 @@
-// Time : O(n ^ n)
+// Time : O(n ^ n), Space : O(n)
 package Dynamic_Programming.Minimum_Jumps_to_reach_end;
 public class recursive {
     int minJumps(int arr[], int n) {
