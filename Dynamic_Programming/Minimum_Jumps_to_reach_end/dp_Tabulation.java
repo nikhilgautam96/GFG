@@ -12,6 +12,7 @@ public class dp_Tabulation {
                 if(j + arr[j] >= i) {
                     if(dp[j] != Integer.MAX_VALUE) {
                         dp[i] = Math.min(dp[i], dp[j] + 1);
+                        break;
                     }
                 }
             }
