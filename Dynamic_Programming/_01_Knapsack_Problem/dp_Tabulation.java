@@ -1,7 +1,7 @@
-// Np Hard Problem.
+// NP Hard Problem.
 
 // Time taken in this technique is "not" called as "Polynomial" but it is called as,
-// "Sudo Polynomial" as the time depends on "target" value.
+// "Sudo Polynomial" bcz the time depends on "target" value.
 // and in case "target" is "too Large" it can behave worse than "O(2 ^ n) solution"
 
 // Time : Theta(n * target), Space : Theta(n * target)

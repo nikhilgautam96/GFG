@@ -1,4 +1,4 @@
-// Np Hard Problem.
+// NP Hard Problem.
 
 // Time : O(2 ^ n), Space : O(n)
 package Dynamic_Programming._01_Knapsack_Problem;
