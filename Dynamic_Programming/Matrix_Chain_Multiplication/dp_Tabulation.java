@@ -3,7 +3,7 @@
 
 // Time : O(n ^ 3), Space : O(n ^ 2).
 package Dynamic_Programming.Matrix_Chain_Multiplication;
-public class do_Tabulation {
+public class dp_Tabulation {
     int count_multiplication(int arr[], int n) {
         // dp[i][j] = Result of subarray from (i to j) in arr[].
         // The answer we looking for is for subarray (0 to n-1) ie = dp[0][n-1].
