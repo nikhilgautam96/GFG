@@ -1,4 +1,4 @@
-// In this algo we are not doing palindrome chek through a function which takes O(n) time 
+// In this algo we are not doing palindrome check through a function which takes O(n) time 
 // instead we are using an dp[][] array that gives us the result in O(1) time.
 // but the overall complexity remains same.
 
