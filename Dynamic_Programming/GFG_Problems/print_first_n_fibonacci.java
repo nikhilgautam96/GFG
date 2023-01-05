@@ -1,3 +1,4 @@
+// Time : O(n), Space : O(n).
 package Dynamic_Programming.GFG_Problems;
 public class print_first_n_fibonacci {
     public static long[] printFibb(int n) {
