@@ -1,4 +1,4 @@
-// Time : O(n), Space : O(n).
+// Time : O(n), Space : O(1).
 package Dynamic_Programming.GFG_Problems;
 public class Count_number_of_hops {
     static long countWays(int n) {
