@@ -1,3 +1,4 @@
+// Time : O(n * m), Space : O(n * m).
 package Dynamic_Programming.STRIVER;
 public class Print_LCS {
     static void lcs(String s1, String s2) {
