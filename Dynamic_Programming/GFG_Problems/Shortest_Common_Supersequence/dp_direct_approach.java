@@ -1,3 +1,4 @@
+// Time : O(n * m), Space : O(n * m).
 package Dynamic_Programming.GFG_Problems.Shortest_Common_Supersequence;
 public class dp_direct_approach {
     static int supersequence(String s1, String s2, int m, int n) {
