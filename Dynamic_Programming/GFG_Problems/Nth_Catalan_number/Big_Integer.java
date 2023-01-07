@@ -4,7 +4,7 @@ import java.math.*;
 public class Big_Integer {
     public static BigInteger findCatalan(int n) {
         BigInteger b1 = new BigInteger("1");
-        // Nth Catalan num = (2n)!/((n! * n!) * (n+1))
+        // Nth Catalan num = ((2n)C(n)) * (1/(n+1)) = (2n)!/((n! * n!) * (n+1))
         // calculating (n!)
         for(int i = 1; i<=n; i++) {
             b1 = b1.multiply(BigInteger.valueOf(i));
