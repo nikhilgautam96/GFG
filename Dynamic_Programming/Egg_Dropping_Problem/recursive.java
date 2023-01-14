@@ -15,7 +15,7 @@ public class recursive {
 
         int min = Integer.MAX_VALUE;
         for(int i = 1; i<=floors; i++) {
-            int max = Math.max(min_Attempts(eggs-1, floors-1), min_Attempts(eggs, floors-i));
+            int max = Math.max(min_Attempts(eggs-1, i-1), min_Attempts(eggs, floors-i));
             min = Math.min(min, max);
         }
         return min + 1;
