@@ -3,12 +3,12 @@
 // Space : Theta(n * k), if we precompute sums then Space : O(n * n)
 package Dynamic_Programming.GFG_lectures.Allocate_Minimum_Pages;
 public class dp_Tabulation {
-    int sum(int arr[], int i, int j) {
+    static int sum(int arr[], int i, int j) {
         int s = 0;
         for( ; i<=j; i++) { s += arr[i]; }
         return s;
     }
-    int minPages(int arr[], int n, int k) {
+    static int minPages(int arr[], int n, int k) {
         int dp[][] = new int[k+1][n+1];
         // dp[i][j] = minimum Pages for 'i' students and 'j' books.
                     // or
@@ -22,7 +22,7 @@ public class dp_Tabulation {
             // dp[1][i] = all i books allocated to that student only.
             dp[1][i] = sum(arr, 0, i-1);
         }
-        for(int i = 1; i<=n; i++) {
+        for(int i = 1; i<=k; i++) {
             // below step is invalid if we have to allocate atleast 1 book to every student.
             // bcz, if(book == 1 && student > 1) then there is no way 
             //                  every student gets atleast 1 book, so
@@ -55,5 +55,9 @@ public class dp_Tabulation {
             }
         }
         return dp[k][n];
+    }
+    public static void main(String[] args) {
+        int arr[] = {19, 81, 2, 41, 61, 59, 28, 69, 76, 88};
+        System.out.println(minPages(arr, 10, 5));
     }
 }

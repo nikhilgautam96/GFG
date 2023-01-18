@@ -4,7 +4,7 @@
 //                      we have tree size as "n + sum".
 package Dynamic_Programming.GFG_lectures.Coin_Change;
 public class recursive {
-    int count_Ways(int coins[], int n, int sum) {
+    static int count_Ways(int coins[], int n, int sum) {
         if(sum == 0) {
             return 1; // we return '1' for one possible solution found.
         }
@@ -17,5 +17,9 @@ public class recursive {
         //            2. we don't select the coin - in this case we are left with 'n-1' coins
         //                                          and the sum also remains the same. }
         return count_Ways(coins, n, sum - coins[n-1]) + count_Ways(coins, n-1, sum);
+    }
+    public static void main(String[] args) {
+        int arr[] = {1, 2};
+        System.out.println(count_Ways(arr, 2, 8));
     }
 }
